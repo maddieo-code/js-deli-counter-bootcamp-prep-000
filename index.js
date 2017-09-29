@@ -22,5 +22,6 @@ function currentLine(katzDeliLine) {
       line = `${line} ${i+1}. ${katzDeliLine[i]},`;
     }
   }
+  line = line.substring(0,line.length() - 1);
   return line;
 }
